@@ -36,7 +36,7 @@ def gen_bin(n, p_card):
         while i != n:
             range_start = 10**(5-1)
             range_end = (10**5)-1
-            f = open("./tmp/cards.txt", "a")
+            f = open("/tmp/cards.txt", "a")
 
             pre_num = randint(range_start, range_end)
             num = add_prefix(p_card, pre_num)
@@ -63,7 +63,7 @@ def gen_bin(n, p_card):
 @app.route('/', methods=['GET', 'POST'])
 def home():
     if request.method == 'POST':
-        open('./tmp/cards.txt', 'w').close()
+        open('/tmp/cards.txt', 'w').close()
         num = request.form['num']
         card_t = request.form['card_type']
 
@@ -73,7 +73,7 @@ def home():
         if(check):
             return render_template("Error.html")
         else: 
-            path = './tmp/cards.txt'
+            path = '/tmp/cards.txt'
             return send_file(path, as_attachment=True)
 
     else:
