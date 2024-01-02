@@ -1,9 +1,8 @@
-# Contributing to Internet Health Report
+# Contributing to Live-CC-Generator
 
 First off, thanks for taking the time to contribute! 🎉🎉
 
 When contributing to this repository, please first discuss the change you wish to make via issue with the maintainers of this repository before making a change. These are mostly guidelines, not rules. Use your best judgment, and feel free to propose changes to this document in a pull request.
-
 
 ## Pull Request Process
 
@@ -24,7 +23,7 @@ When contributing to this repository, please first discuss the change you wish t
 # Clone the repo
 $ git clone git@github.com:<User-Name>/<Repo-Name>.git
 # Add upstream remote
-$ git remote add upstream git@github.com:InternetHealthReport/ihr-website.git 
+$ git remote add upstream git@github.com:Abhay2342/live_cc_generator.git
 # Fetch and merge with upstream/master
 $ git fetch upstream
 $ git merge upstream/master

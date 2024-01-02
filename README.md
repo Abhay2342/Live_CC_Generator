@@ -4,11 +4,35 @@
 The Live CC Generator, a Python-based tool hosted on Flask, simplifies the creation of random credit card numbers. Ideal for developers, testers, and educators, it offers a hands-on experience for understanding credit card systems and security measures in a user-friendly manner.
 </p>
 
+  <p align="center">
+    <a href="https://live-cc-generator.vercel.app/"><strong>Live-CC-Generator »</strong></a>
+  </p>
+</p>
+
+<p align="center">
+    
+  <br />
+  <br />
+  <a href="https://twitter.com/Abhay2342">
+    <img src="https://img.shields.io/badge/Twitter-00acee?logo=twitter&logoColor=white" />
+  </a>
+  <a href="https://www.instagram.com/abhay_suryawanshi_2342/">
+    <img src="https://img.shields.io/badge/Instagram-E4405F?logo=instagram&logoColor=white" />
+  </a>
+  <a href="https://www.facebook.com/AbhayS.2342/">
+    <img src="https://img.shields.io/badge/Facebook-4440e4?logo=facebook&logoColor=white" />
+  </a>
+  <a href="https://github.com/Abhay2342">
+    <img src="https://img.shields.io/badge/Github-Link-brightgreen" />
+  </a>
+  <br />
+</p>
+
 ## Prerequisites to run
 
 
-#### Install Python 3
-Install [Python 3](https://www.python.org/)
+### Install Python Interpreter
+Install [Python v3](https://www.python.org/)
 
 ### Install Project Requirements
 ```bash
