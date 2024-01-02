@@ -1,17 +1,15 @@
 <p align="center"><img src="./static/img/live-cc-generator.png" height="100"></p>
 <h1 align="center">Live CC Generator</h1>
 <p align="center">
+    <a href="https://live-cc-generator.vercel.app/"><strong>React-Face-Detector »</strong></a>
+</p>
+<p align="center">
 The Live CC Generator, a Python-based tool hosted on Flask, simplifies the creation of random credit card numbers. Ideal for developers, testers, and educators, it offers a hands-on experience for understanding credit card systems and security measures in a user-friendly manner.
 </p>
 
-  <p align="center">
-    <a href="https://live-cc-generator.vercel.app/"><strong>Live-CC-Generator »</strong></a>
-  </p>
-</p>
 
 <p align="center">
     
-  <br />
   <br />
   <a href="https://twitter.com/Abhay2342">
     <img src="https://img.shields.io/badge/Twitter-00acee?logo=twitter&logoColor=white" />
