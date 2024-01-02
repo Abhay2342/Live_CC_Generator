@@ -31,7 +31,7 @@ def add_suffix(suffix, num):
 
 
 def gen_bin(n, p_card):
-    temp_file_path = './tmp/cards.txt'  # Use a temporary file path
+    temp_file_path = '/tmp/cards.txt'  # Use a temporary file path
 
     file = open(temp_file_path, 'a')
     # Write data to the temporary file
@@ -68,14 +68,14 @@ def gen_bin(n, p_card):
 def home():
     if request.method == 'POST':
         # open('./static/cards.txt', 'w').close()
-        open('./tmp/cards.txt', 'w').close()
+        open('/tmp/cards.txt', 'w').close()
         num = request.form['num']
         card_t = request.form['card_type']
 
         print("Generating...")
         gen_bin(num, card_t)
         # path = './static/cards.txt'
-        path = './tmp/cards.txt'
+        path = '/tmp/cards.txt'
         return send_file(path, as_attachment=True)
 
     else:
