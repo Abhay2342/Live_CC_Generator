@@ -1,4 +1,4 @@
-<p align="center"><img src="./static/img/favicon.ico" height="100"></p>
+<p align="center"><img src="./static/img/live-cc-generator.png" height="100"></p>
 <h1 align="center">Live CC Generator</h1>
 <p align="center">
 The Live CC Generator, a Python-based tool hosted on Flask, simplifies the creation of random credit card numbers. Ideal for developers, testers, and educators, it offers a hands-on experience for understanding credit card systems and security measures in a user-friendly manner.
@@ -23,6 +23,9 @@ set FLASK_APP=app.py
 flask run
 ```
 
+> [!IMPORTANT]  
+> To enable local testing, modify the file path from `/tmp/cards.txt` to either `./static/cards.txt` or include a `dot (.)` before `/tmp/cards.txt`, like this: `./tmp/cards.txt`.
+
 ## Ways to contribute
 
 First off, thanks for taking the time to contribute! 🎉🎉
@@ -42,4 +45,4 @@ Please refer to the project's style and contribution guidelines for submitting p
 6. **Rebase** your branch with the master branch
 7. Submit your **Pull Request** so that we can review it
 
-Please submit your issues and pull request while following the automated template. During the contributing phase abide by the [Contributing Guidelines]().
+Please submit your issues and pull request while following the automated template. During the contributing phase abide by the [Contributing Guidelines](https://github.com/Abhay2342/live_cc_generator/blob/master/CONTRIBUTING.md).
