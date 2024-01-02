@@ -14,7 +14,6 @@ def luhn_checksum(card_number):
     checksum += sum(odd_digits)
     for d in even_digits:
         checksum += sum(digits_of(d*2))
-    # print(checksum)
     return checksum % 10
 
 
@@ -31,18 +30,12 @@ def add_suffix(suffix, num):
 
 
 def gen_bin(n, p_card):
-    temp_file_path = '/tmp/cards.txt'  # Use a temporary file path
-
-    file = open(temp_file_path, 'a')
-    # Write data to the temporary file
-    # file.write("example data")
     n = int(n)
     i = 0
     while i != n:
         range_start = 10**(5-1)
         range_end = (10**5)-1
-        file = open(temp_file_path, 'a')
-        # f = open("./static/cards.txt", "a")
+        f = open("/tmp/cards.txt", "a")
 
         pre_num = randint(range_start, range_end)
         num = add_prefix(p_card, pre_num)
@@ -58,8 +51,7 @@ def gen_bin(n, p_card):
 
         res = is_luhn_valid(num)
         if res:
-            # f.write(f"{num}\n")
-            file.write(f"{num}\n")
+            f.write(f"{num}\n")
             i += 1
     print("Done!")
 
@@ -67,14 +59,12 @@ def gen_bin(n, p_card):
 @app.route('/', methods=['GET', 'POST'])
 def home():
     if request.method == 'POST':
-        # open('./static/cards.txt', 'w').close()
         open('/tmp/cards.txt', 'w').close()
         num = request.form['num']
         card_t = request.form['card_type']
 
         print("Generating...")
         gen_bin(num, card_t)
-        # path = './static/cards.txt'
         path = '/tmp/cards.txt'
         return send_file(path, as_attachment=True)
 
