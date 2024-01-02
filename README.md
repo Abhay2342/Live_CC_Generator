@@ -14,7 +14,7 @@ The Live CC Generator, a Python-based tool with Flask framework hosted on Vercel
   <a href="https://twitter.com/Abhay2342">
     <img src="https://img.shields.io/badge/Twitter-00acee?logo=twitter&logoColor=white" />
   </a>
-  <a href="https://www.instagram.com/abhay_suryawanshi_2342/">
+  <a href="https://www.instagram.com/_abhay_s2342/">
     <img src="https://img.shields.io/badge/Instagram-E4405F?logo=instagram&logoColor=white" />
   </a>
   <a href="https://www.facebook.com/AbhayS.2342/">
