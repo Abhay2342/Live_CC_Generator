@@ -42,11 +42,12 @@ pip install -r requirements.txt
 git clone https://github.com/Abhay2342/live_cc_generator.git
 cd live_cc_generator
 set FLASK_APP=app.py
+set FLASK_EVN=development
 flask run
 ```
 
 > [!IMPORTANT]  
-> To enable local testing, modify the file path from `/tmp/cards.txt` to either `./static/cards.txt` or include a `dot (.)` before `/tmp/cards.txt`, like this: `./tmp/cards.txt`.
+> For local testing, update the file path from `/tmp/cards.txt` to either `./static/cards.txt` or include a `dot (.)` before `/tmp/cards.txt` like this: `./tmp/cards.txt`. Additionally, ensure that all paths are modified consistently throughout the codebase before committing changes or creating a pull request to avoid conflicts in the production environment.
 
 ## Ways to contribute
 

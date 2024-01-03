@@ -13,3 +13,7 @@
 //             }, false)
 //         })
 // })()
+
+function details_submit(params) {
+    
+}
