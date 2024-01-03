@@ -32,8 +32,8 @@ def add_suffix(suffix, num):
 def gen_bin(n, p_card):
     n = int(n)
     print(n)
-    
-    if(n<=10000):
+
+    if (n <= 10000):
         i = 0
         while i != n:
             range_start = 10**(5-1)
@@ -61,22 +61,21 @@ def gen_bin(n, p_card):
         return 1
 
 
-
 @app.route('/', methods=['GET', 'POST'])
 def home():
     if request.method == 'POST':
         open('/tmp/cards.txt', 'w').close()
         num = request.form.get('num')
-        card_t=request.form.get('card_type')
-        
+        card_t = request.form.get('card_type')
+
         print("Generating...")
-        
+
         if num and card_t:
-            check=gen_bin(num, card_t)
+            check = gen_bin(num, card_t)
             print(check)
-            if(check):
+            if (check):
                 return render_template("Error.html")
-            else: 
+            else:
                 path = '/tmp/cards.txt'
                 return send_file(path, as_attachment=True)
         else:
@@ -84,7 +83,3 @@ def home():
 
     else:
         return render_template("index.html")
-
-
-# if __name__ == "__main__":
-# app.run(debug=True)
